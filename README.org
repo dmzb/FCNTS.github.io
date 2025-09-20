@@ -1,0 +1,10 @@
+* Workflow
+Edit only the =index.org= file. Then, run the command ~M-x org-export-dispatch~
+to export to HTML (the standard key-binding is ~C-c C-e~.
+
+* Things to improve
+** TODO Record of previous speakers
+At the time, we are linking to the previous websites. Perhaps it would be best
+to link to a separate webiste with a giant table of all the previous speakers
+at the seminar (with dates and titles). Perhaps we can feed the old html to
+ChatGPT and ask it to do it for us?

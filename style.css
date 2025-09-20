@@ -1,0 +1,29 @@
+:root {
+    --body-color: #34495e;
+    --heading-color: #1A7595; 
+    --link-color: #FF2056;
+}
+
+body {
+        font-family: Verdana, sans-serif;
+        font-size: 1.6em;
+        color: var(--body-color);
+	    margin-top: 0;
+	    line-height: 1.7rem;
+}
+
+body #content {
+	    padding: 2em;
+        border: solid;
+        margin-top: 25px;
+	    max-width: max(60% ,48em);
+	    background-color: #f8f9f9;
+        border-radius: 20px;
+}
+
+img {
+        border: solid; 
+        border-radius: 10px;
+        margin: 1em;
+        width: 95%;
+    }

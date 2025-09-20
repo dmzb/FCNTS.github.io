@@ -1,0 +1,106 @@
+#+TITLE: Five College Number Theory Seminar
+#+SUBTITLE: Fall 2025
+#+AUTHOR: Santiago Arango-Piñeros, David Zureick-Brown
+#+OPTIONS: toc:nil num:nil
+# #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+
+#+begin_export html
+<link rel="stylesheet" href="style.css">
+#+end_export
+
+
+#+begin_export html
+<img src="ct-river.jpg" alt="Connecticut River Valley">
+#+end_export
+
+* Upcoming talks
+
+#+begin_export html
+<div class="embeddable_schedule" shortname="FCNTS" daterange="future"></div>
+<script src="https://researchseminars.org/embed_seminars.js" onload="seminarEmbedder.initialize({'addCSS': true});"></script>
+#+end_export
+
+* Where and When
+- Unless noted otherwise, all talks begin at *4pm*.
+- Talks are held at *Amherst College*, in the *Seeley Mudd building*,
+  room *Seeley-Mudd 205*.
+
+* Driving Directions and Campus Map
+- [[https://www.amherst.edu/visiting/directions][Driving Directions to Amherst College]]
+- [[https://www.hotelumass.com/][UMass Campus Center Hotel]]
+- [[https://map.concept3d.com/?id=750#!ct/50385,11132,?s/][Amherst College Campus Map]]
+
+* Parking Directions
+** Amherst College
+To find parking on Amherst College's campus, drive east on College Street
+(Route 9) past the Amherst town common on your left. Two blocks after the
+common, turn right onto East Drive and enter the campus (just before the purple
+and white railroad overpass). Follow East Drive for ~3 blocks; South Parking Lot
+will be just beyond the tennis courts.
+
+The seminar is in Seeley Mudd north of the parking lot.  
+[[http://myatlascms.com/map/?id=750#!ct/10816,10817,10818,10821,10822,15072,15239,9729?m/152555][Interactive campus map with South Parking Lot highlighted]].
+
+** UMass Amherst
+In addition to the *campus center garage*, there are *metered parking spaces*
+near the Lederle Graduate Research Towers.  
+[[http://www.math.umass.edu/~siman/umass-parking.pdf][UMass campus map with parking spaces marked]].
+
+* Seminar Members
+** Amherst College
+- [[https://rlbenedetto.people.amherst.edu/][Rob Benedetto]]
+- [[mailto:gscall@cs.amherst.edu][Gregory Call]]
+- [[https://dacox.people.amherst.edu/][David Cox]]
+- [[https://hdaniels.people.amherst.edu/][Harris Daniels]]
+- [[https://afolsom.people.amherst.edu/][Amanda Folsom]]
+- [[https://dmzb.github.io/][David Zureick-Brown]]
+
+** Smith College
+- [[https://www.smith.edu/academics/faculty/geremias-polanco][Geremias Polanco Encarnación]]
+
+** Mount Holyoke College
+- [[https://www.mtholyoke.edu/directory/emeriti-retired-faculty/giuliana-davidoff][Giuliana P. Davidoff]]
+- [[https://www.mtholyoke.edu/directory/faculty-staff/tori-day][Tori Day]]
+- [[https://www.jenpaulhus.com/][Jen Paulhus]]
+- [[https://www.mtholyoke.edu/directory/faculty-staff/margaret-robinson][Margaret Robinson]]
+
+** UMass Amherst
+- [[https://sarangop1728.github.io/][Santiago Arango-Piñeros]]
+- [[https://www.umass.edu/mathematics-statistics/about/directory/louis-gaudet][Louis Gaudet]]
+- [[http://www.math.umass.edu/~gunnells][Paul Gunnells]]
+- [[http://www.math.umass.edu/~hajir][Farshid Hajir]]
+- [[http://www.math.umass.edu/~weston/][Thomas Weston]]
+- [[http://www.math.umass.edu/~siman][Siman Wong]]
+
+** Western New England College
+- [[mailto:jbeineke@wne.edu][Jennifer Beineke]]
+- [[mailto:cshor@wne.edu][Caleb Shor]]
+
+* Previous talks
+
+#+begin_export html
+<div class="embeddable_schedule" shortname="FCNTS" daterange="past"></div>
+<script src="https://researchseminars.org/embed_seminars.js" onload="seminarEmbedder.initialize({'addCSS': true});"></script>
+#+end_export
+
+* Past Seminar Pages
+- [[https://people.math.umass.edu/~siman/seminar.html][2014/15–2022/23]]
+- [[http://www.math.umass.edu/~siman/1314.html][2013/14]]
+- [[http://www.math.umass.edu/~siman/1213.html][2012/13]]
+- [[http://www.math.umass.edu/~siman/1112.html][2011/12]]
+- [[http://www.math.umass.edu/~siman/1011.html][2010/11]]
+- [[http://www.math.umass.edu/~siman/0910.html][2009/10]]
+- [[http://www.math.umass.edu/~siman/0809.html][2008/09]]
+- [[http://www.math.umass.edu/~siman/0708.html][2007/08]]
+- [[http://www.math.umass.edu/~siman/0607.html][2006/07]]
+- [[http://www.math.umass.edu/~siman/0506.html][2005/06]]
+- [[http://www.math.umass.edu/~siman/0405.html][2004/05]]
+- [[http://www.math.umass.edu/~siman/0304.html][2003/04]]
+- [[http://www.math.umass.edu/~siman/0203.html][2002/03]]
+- [[http://www.math.umass.edu/~siman/0102.html][2001/02]]
+- [[http://www.math.umass.edu/~siman/0001.html][2000/01]]
+- [[http://www.math.umass.edu/~siman/9900.html][1999/00]]
+- [[http://www.math.umass.edu/~siman/9899.html][1998/99]]
+- [[http://www.math.umass.edu/~siman/9798.html][1997/98]]
+- [[http://www.math.umass.edu/~siman/9697.html][1996/97]]
+

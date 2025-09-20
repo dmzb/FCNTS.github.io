@@ -1,569 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-09-20 Sat 12:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Five College Number Theory Seminar</title>
+<meta name="author" content="Santiago Arango-Piñeros, David Zureick-Brown" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-<HTML>
-<BODY  BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#FF0000">
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Five College Number Theory Seminar
+<br />
+<span class="subtitle">Fall 2025</span>
+</h1>
+<link rel="stylesheet" href="style.css">
 
 
+<img src="ct-river.jpg" alt="Connecticut River Valley">
 
-<HEAD>
-   <TITLE>Five College Number Theory Seminar</TITLE>
-</HEAD>
-
-
-
-<p>
-
-<center>
-<TABLE width="80%">
- <TR>
-  <TD>
-   <IMG SRC="images/EllCurve.gif">
-  </TD>
-  <TD align=center>
-    <H1><b>
-       Five College Number Theory Seminar
-       <br>
-      <script>document.write(new Date().getFullYear())</script>-<script>document.write(1+new Date().getFullYear())</script>
-    </b></H1>
-  </TD>
-  <TD align=right>
-   <IMG SRC="images/5923new.gif" align=top>
-  </TD>
- </TR>
-</table>
-</center>
-
-<p><p>
-
-
-<IMG src="images/redball.gif">
-<u><b>Schedule</b></u>
+<div id="outline-container-org44a5c65" class="outline-2">
+<h2 id="org44a5c65">Upcoming talks</h2>
+<div class="outline-text-2" id="text-org44a5c65">
 <div class="embeddable_schedule" shortname="FCNTS" daterange="future"></div>
 <script src="https://researchseminars.org/embed_seminars.js" onload="seminarEmbedder.initialize({'addCSS': true});"></script>
+</div>
+</div>
 
-<IMG src="images/redball.gif">
-<u><b>Where and When</b></u>
-
-  <ul>
-   <li>
-     Unless noted otherwise, all talks 
-     <b><font color="#00bb00">begins at 4pm.</font></b></u>
-   <li>
-     <b><font color="#ff0000"><i>Most</i></font></b> talks are held
-     at
-     <b><font color="#ff0000">Amherst College</font></b>
-     in the
-<b><font color="#ff0000">Seeley Mudd building</font></b>,
-which houses  Amherst College's Department of Mathematics, 
-in room
-    <b><font color="#ff0000">Seeley-Mudd 207.</font></b>
-<!--    Refreshments are served at <b>3:30 p.m.</b> in <b><font color="#ff0000">Seeley-Mudd 208.</font></b>-->
-  <li>
-    <b><font color="#0000ff"><i>A few</i></font></b>
-    talks are helds at
-     <b><font color="#0000ff">UMass Amherst,</font></b>
-     in
-     <b><font color="#0000ff">Lederle Graduate Research Tower, Room 202</font></b>.  
-   Refreshments are served at
-   <b>3:45 p.m.</b> in
-   <b><font color="#0000ff">LGRT 1634.</font></b>
-  <li>
-    Please see the calendar below for the exact location of each talk.
-  </ul>
-
-
-<IMG src="images/redball.gif">
-<u><b>Driving Direction and Campus Map</b></u>
-
-<ul>
-  <li><A HREF="https://www.amherst.edu/visiting/directions">Driving Direction to Amherst College</a>
-  <li><A HREF="https://www.hotelumass.com/">UMass Campus Center Hotel</a>
-  <li><A HREF="https://map.concept3d.com/?id=750#!ct/50385,11132,?s/">Campus map for Amherst College</A>
+<div id="outline-container-org4960df4" class="outline-2">
+<h2 id="org4960df4">Where and When</h2>
+<div class="outline-text-2" id="text-org4960df4">
+<ul class="org-ul">
+<li>Unless noted otherwise, all talks begin at <b>4pm</b>.</li>
+<li>Talks are held at <b>Amherst College</b>, in the <b>Seeley Mudd building</b>,
+room <b>Seeley-Mudd 205</b>.</li>
 </ul>
+</div>
+</div>
 
+<div id="outline-container-orga5b9d86" class="outline-2">
+<h2 id="orga5b9d86">Driving Directions and Campus Map</h2>
+<div class="outline-text-2" id="text-orga5b9d86">
+<ul class="org-ul">
+<li><a href="https://www.amherst.edu/visiting/directions">Driving Directions to Amherst College</a></li>
+<li><a href="https://www.hotelumass.com/">UMass Campus Center Hotel</a></li>
+<li><a href="https://map.concept3d.com/?id=750#!ct/50385,11132,?s/">Amherst College Campus Map</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org40cdadb" class="outline-2">
+<h2 id="org40cdadb">Parking Directions</h2>
+<div class="outline-text-2" id="text-org40cdadb">
+</div>
+<div id="outline-container-orgc931ac5" class="outline-3">
+<h3 id="orgc931ac5">Amherst College</h3>
+<div class="outline-text-3" id="text-orgc931ac5">
+<p>
+To find parking on Amherst College's campus, drive east on College Street
+(Route 9) past the Amherst town common on your left. Two blocks after the
+common, turn right onto East Drive and enter the campus (just before the purple
+and white railroad overpass). Follow East Drive for ~3 blocks; South Parking Lot
+will be just beyond the tennis courts.
+</p>
 
 <p>
+The seminar is in Seeley Mudd north of the parking lot.  
+<a href="http://myatlascms.com/map/?id=750#!ct/10816,10817,10818,10821,10822,15072,15239,9729?m/152555">Interactive campus map with South Parking Lot highlighted</a>.
+</p>
+</div>
+</div>
 
-
-<IMG src="http://www.math.umass.edu/~siman/redball.gif">
-<u><b>Parking Directions</b></u>
-
-<table>
-<tr>
-<td>
-&nbsp;&nbsp;
-</td>
-<td>
-<!--To find the parking lot
-in back of Seeley Mudd, drive east on College Street (Route 9) past the
-Amherst town common on your left.  Two blocks after the common, turn
-right onto the College campus (just before you go under a railroad
-overpass).  Take your second right and follow it until the road ends at
-the Seeley Mudd parking lot.  From the parking lot, take the stairs in
-the Life Sciences building, just to the right of Seeley Mudd, up one
-flight, exit and turn left toward Seeley Mudd.
--->
-
-
-
-<b><font color="#ff0000">Amherst College</font></b> 
-
-<br>
-To find parking on Amherst College's campus,
-  drive east on College Street (Route 9) past the Amherst town common on your left. Two blocks after the common, turn right onto East Drive and enter the campus (just before you go under a purple and white railroad overpass). Follow East Drive for approximately 3 blocks, South Parking lot will be just beyond the tennis courts.
-
-<BR><BR>
-  The seminar is in Seeley Mudd located north of the parking lot. An interactive map of the campus can be found
-<a href="http://myatlascms.com/map/?id=750#!ct/10816,10817,10818,10821,10822,15072,15239,9729?m/152555">here</a>
- with South Parking Lot highlighted.
-</td>
-</tr>
-
-<br>
-
-<tr>
-<td>
-&nbsp;&nbsp;
-</td>
-<td>
-<br>
-    <b><font color="#0000ff">UMass Amherst</font></b>
-<br>
-In addition to the <b>campus center garage</b>, there are <b>metered
-parking spaces</b> near the Lederle Graduate Research Towers.
-<a href="http://www.math.umass.edu/~siman/umass-parking.pdf">Here</a>
-is a UMass campus map with these parking spaces marked.
-</td>
-</tr>
-
-</table>
-
-
-
-
-
-
-
-
-
+<div id="outline-container-org15a8e44" class="outline-3">
+<h3 id="org15a8e44">UMass Amherst</h3>
+<div class="outline-text-3" id="text-org15a8e44">
 <p>
+In addition to the <b>campus center garage</b>, there are <b>metered parking spaces</b>
+near the Lederle Graduate Research Towers.  
+<a href="http://www.math.umass.edu/~siman/umass-parking.pdf">UMass campus map with parking spaces marked</a>.
+</p>
+</div>
+</div>
+</div>
 
-<IMG src="http://www.math.umass.edu/~siman/redball.gif">
-<u><b>Meet our seminar members</b></u>
+<div id="outline-container-orgd0f7a54" class="outline-2">
+<h2 id="orgd0f7a54">Seminar Members</h2>
+<div class="outline-text-2" id="text-orgd0f7a54">
+</div>
+<div id="outline-container-orgc72e04c" class="outline-3">
+<h3 id="orgc72e04c">Amherst College</h3>
+<div class="outline-text-3" id="text-orgc72e04c">
+<ul class="org-ul">
+<li><a href="https://rlbenedetto.people.amherst.edu/">Rob Benedetto</a></li>
+<li><a href="mailto:gscall@cs.amherst.edu">Gregory Call</a></li>
+<li><a href="https://dacox.people.amherst.edu/">David Cox</a></li>
+<li><a href="https://hdaniels.people.amherst.edu/">Harris Daniels</a></li>
+<li><a href="https://afolsom.people.amherst.edu/">Amanda Folsom</a></li>
+<li><a href="https://dmzb.github.io/">David Zureick-Brown</a></li>
+</ul>
+</div>
+</div>
 
-<table>
-<tr>
-  <td>
-    &nbsp;&nbsp;
-  </td>
-  <td>
-    <IMG src="http://www.math.umass.edu/~siman/Green.gif">
-    Amherst College
-  </td>
-</tr>
-<tr>
-  <td>
-  </td>
-  <td>
-    &nbsp;  &nbsp;  &nbsp;
-    <a href="https://rlbenedetto.people.amherst.edu/">
-      Rob Benedetto</a>&nbsp; &nbsp;
-    <A HREF="mailto:gscall@cs.amherst.edu">
-      Gregory Call</a>&nbsp; &nbsp;
-    <A HREF="https://dacox.people.amherst.edu/">
-      David Cox</A>&nbsp; &nbsp;
-    <A HREF="https://hdaniels.people.amherst.edu/">Harris Daniels</a>&nbsp; &nbsp;
-    <a href="https://afolsom.people.amherst.edu/">Amanda Folsom</a>&nbsp; &nbsp;
-    <a href="https://dmzb.github.io/">David Zureick-Brown</a>&nbsp; &nbsp;    
-  </td>
-</tr>
+<div id="outline-container-orgd6874f5" class="outline-3">
+<h3 id="orgd6874f5">Smith College</h3>
+<div class="outline-text-3" id="text-orgd6874f5">
+<ul class="org-ul">
+<li><a href="https://www.smith.edu/academics/faculty/geremias-polanco">Geremias Polanco Encarnación</a></li>
+</ul>
+</div>
+</div>
 
+<div id="outline-container-orgc033086" class="outline-3">
+<h3 id="orgc033086">Mount Holyoke College</h3>
+<div class="outline-text-3" id="text-orgc033086">
+<ul class="org-ul">
+<li><a href="https://www.mtholyoke.edu/directory/emeriti-retired-faculty/giuliana-davidoff">Giuliana P. Davidoff</a></li>
+<li><a href="https://www.mtholyoke.edu/directory/faculty-staff/tori-day">Tori Day</a></li>
+<li><a href="https://www.jenpaulhus.com/">Jen Paulhus</a></li>
+<li><a href="https://www.mtholyoke.edu/directory/faculty-staff/margaret-robinson">Margaret Robinson</a></li>
+</ul>
+</div>
+</div>
 
+<div id="outline-container-org8218c6b" class="outline-3">
+<h3 id="org8218c6b">UMass Amherst</h3>
+<div class="outline-text-3" id="text-org8218c6b">
+<ul class="org-ul">
+<li><a href="https://sarangop1728.github.io/">Santiago Arango-Piñeros</a></li>
+<li><a href="https://www.umass.edu/mathematics-statistics/about/directory/louis-gaudet">Louis Gaudet</a></li>
+<li><a href="http://www.math.umass.edu/~gunnells">Paul Gunnells</a></li>
+<li><a href="http://www.math.umass.edu/~hajir">Farshid Hajir</a></li>
+<li><a href="http://www.math.umass.edu/~weston/">Thomas Weston</a></li>
+<li><a href="http://www.math.umass.edu/~siman">Siman Wong</a></li>
+</ul>
+</div>
+</div>
 
-<tr>
-  <td>
-    &nbsp;&nbsp;
-  </td>
-  <td>
-    <IMG src="http://www.math.umass.edu/~siman/Green.gif">
-    Smith College    
-  </td>
-</tr>
-<tr>
-  <td>
-  </td>
-  <td>
-    &nbsp;  &nbsp;  &nbsp;
-    <A HREF="https://www.smith.edu/academics/faculty/geremias-polanco">
-       Geremias Polanco Encarnación
-    </a>
-  </td>
-</tr>
+<div id="outline-container-org3e75701" class="outline-3">
+<h3 id="org3e75701">Western New England College</h3>
+<div class="outline-text-3" id="text-org3e75701">
+<ul class="org-ul">
+<li><a href="mailto:jbeineke@wne.edu">Jennifer Beineke</a></li>
+<li><a href="mailto:cshor@wne.edu">Caleb Shor</a></li>
+</ul>
+</div>
+</div>
+</div>
 
+<div id="outline-container-orgc370f3b" class="outline-2">
+<h2 id="orgc370f3b">Previous talks</h2>
+<div class="outline-text-2" id="text-orgc370f3b">
+<div class="embeddable_schedule" shortname="FCNTS" daterange="past"></div>
+<script src="https://researchseminars.org/embed_seminars.js" onload="seminarEmbedder.initialize({'addCSS': true});"></script>
+</div>
+</div>
 
-
-
-<tr>
-  <td>
-    &nbsp;&nbsp;
-  </td>
-  <td>
-    <IMG src="http://www.math.umass.edu/~siman/Green.gif">
-    Mount Holyoke College    
-  </td>
-</tr>
-<tr>
-  <td>
-  </td>
-  <td>
-    &nbsp;  &nbsp;  &nbsp;
-    <A HREF="https://www.mtholyoke.edu/directory/emeriti-retired-faculty/giuliana-davidoff">
-      Giuliana P. Davidoff</a>&nbsp; &nbsp;
-    <A HREF="https://www.mtholyoke.edu/directory/faculty-staff/tori-day">
-    Tori Day</a>&nbsp; &nbsp;    
-    <A HREF="https://www.jenpaulhus.com/">
-    Jen Paulhus</a>&nbsp; &nbsp;    
-    <A HREF="https://www.mtholyoke.edu/directory/faculty-staff/margaret-robinson">
-      Margaret Robinson</a>
-  </td>
-</tr>
-
-
-<!--
-<tr>
-  <td>
-    &nbsp;&nbsp;
-  </td>
-  <td>
-    <IMG src="http://www.math.umass.edu/~siman/Green.gif">
-    Smith College    
-  </td>
-</tr>
--->
-
-<!--
-<tr>
-  <td>
-  </td>
-  <td>
-    &nbsp;  &nbsp;  &nbsp;
-    <a href="http://www.math.smith.edu/~mbush">
-      Michael Bush</a>
-  </td>
-</tr>
--->
-
-<tr>
-  <td>
-    &nbsp;&nbsp;
-  </td>
-  <td>
-    <IMG src="http://www.math.umass.edu/~siman/Green.gif">
-    UMass Amherst
-  </td>
-</tr>
-<tr>
-  <td>
-  </td>
-  <td>
-    &nbsp;  &nbsp;  &nbsp;
-
-    <A HREF="https://sarangop1728.github.io/">Santiago Arango-Pi&ntilde;eros</a>
-      &nbsp; &nbsp;    
-    <A HREF="http://www.math.umass.edu/~gunnells">Paul Gunnells</a>
-      &nbsp; &nbsp;
-    <A HREF="http://www.math.umass.edu/~hajir">Farshid Hajir</A>
-      &nbsp; &nbsp;
-    <a href="http://www.math.umass.edu/~weston/">Thomas Weston</a>
-      &nbsp;&nbsp;
-    <A HREF="http://www.math.umass.edu/~siman">Siman Wong</A>
-      &nbsp; &nbsp;
-  </td>
-</tr>
-
-
-
-
-<tr>
-  <td>
-    &nbsp;&nbsp;
-  </td>
-  <td>
-    <IMG src="http://www.math.umass.edu/~siman/Green.gif">
-    Western New England College
-  </td>
-</tr>
-<tr>
-  <td>
-  </td>
-  <td>
-    &nbsp;  &nbsp;  &nbsp;
-    <A HREF="mailto:jbeineke@wne.edu">
-      Jennifer Beineke</a>&nbsp; &nbsp;
-    <A HREF="mailto:cshor@wne.edu">
-      Caleb Shor</a>&nbsp; &nbsp;
-  </td>
-</tr>
-
-
-</table>
-
-
-
-
-
-<p>
-<hr>
-
-
-
-
-<!--
-
-<CENTER>
-<B>Schedule for Fall 2013</b>
-<p>
-<TABLE BORDER=1 WIDTH=80%>
-   <TR>
-      <TD width=220>
-         <P>Date</P>
-      </TD>
-      <TD WIDTH=600>
-         <P>Speaker</P>
-      </TD>
-      <TD WIDTH=1200>
-         <P>Title</P>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Sept 10</P>
-      </TD>
-      <TD WIDTH=900>
-         <P>Organization Meeting</P>
-      </TD>
-      <TD WIDTH=1200>
-         <P>Organization Meeting</P>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Sept 17</P>
-      </TD>
-      <TD WIDTH=900>
-         <p>Eren Mehmet Kıral (Brown)</p>
-      </TD>
-      <TD WIDTH=1200>
-         <p>Subconvexity bounds for half integral weight L-functions</p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Sept 24</P>
-      </TD>
-      <TD WIDTH=900>
-         <p></p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Oct 1</P>
-      </TD>
-      <TD WIDTH=900>
-         <p></p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Oct 8</P>
-      </TD>
-      <TD WIDTH=900>
-         <p>Yichao Zhang (UConn)</p>
-      </TD>
-      <TD WIDTH=1200>
-	 <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Oct 15</P>
-      </TD>
-      <TD WIDTH=900>
-         <p>No Talk</p>
-      </TD>
-      <TD WIDTH=1200>
-	<p>(Monday schedule)</p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Oct 22</P>
-      </TD>
-      <TD WIDTH=900>
-         <p></p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Oct 29</P>
-      </TD>
-      <TD WIDTH=900>
-         <p></p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Nov 5</P>
-      </TD>
-      <TD WIDTH=900>
-         <p></p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Nov 12</P>
-      </TD>
-      <TD WIDTH=900>
-         <p>Christian Maire (Universite Bordeaux I)</p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Nov 19</P>
-      </TD>
-      <TD WIDTH=900>
-         <p>Michael Rosen (Brown)</p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Nov 26</P>
-      </TD>
-      <TD WIDTH=900>
-         <p>No Talk</p>
-      </TD>
-      <TD WIDTH=1200>
-         <p>(Thanksgiving)</p>
-      </TD>
-   </TR>
-   <TR>
-      <TD width=220>
-         <P>Dec 3</P>
-      </TD>
-      <TD WIDTH=900>
-         <p></p>
-      </TD>
-      <TD WIDTH=1200>
-         <p></p>
-      </TD>
-   </TR>
-</TABLE>
-</CENTER>
-
--->
-
-
-
-<!--https://calendar.google.com/calendar/u/0?cid=OWIxMmFmYmNhY2NiODIwMTZkNzQ3NTU5ZTRlNjY1MzNlNmM4YmViYWQ0NTM0ZDI4YjMyODYxMWJlNTgzMTA3ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t-->
-
-<center>
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=OWIxMmFmYmNhY2NiODIwMTZkNzQ3NTU5ZTRlNjY1MzNlNmM4YmViYWQ0NTM0ZDI4YjMyODYxMWJlNTgzMTA3ZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-</center>
-
-<p>
-
-<hr>
-
-
-<P>
-Home pages for the
-<A HREF="https://people.math.umass.edu/~siman/seminar.html">
-  14/15-22/23</a>,
-<A HREF="http://www.math.umass.edu/~siman/1314.html">
-  13/14</a>,
-<A HREF="http://www.math.umass.edu/~siman/1213.html">
-  12/13</a>,
-<A HREF="http://www.math.umass.edu/~siman/1112.html">
-  11/12</a>,
-<A HREF="http://www.math.umass.edu/~siman/1011.html">
-  10/11</a>,
-<A HREF="http://www.math.umass.edu/~siman/0910.html">
-  09/10</a>,
-<A HREF="http://www.math.umass.edu/~siman/0809.html">
-  08/09</a>,
-<A HREF="http://www.math.umass.edu/~siman/0708.html">
-  07/08</a>,
-<A HREF="http://www.math.umass.edu/~siman/0607.html">
-  06/07</a>,
-<A HREF="http://www.math.umass.edu/~siman/0506.html">
-  05/06</a>,
-<A HREF="http://www.math.umass.edu/~siman/0405.html">
-  04/05</a>,
-<A HREF="http://www.math.umass.edu/~siman/0304.html">
-  03/04</a>,
-<A HREF="http://www.math.umass.edu/~siman/0203.html">
-  02/03</a>,
-<A HREF="http://www.math.umass.edu/~siman/0102.html">
-  01/02</a>,
-<A HREF="http://www.math.umass.edu/~siman/0001.html">
-  00/01</a>,
-<A HREF="http://www.math.umass.edu/~siman/9900.html">
-  99/00</a>,
-<A HREF="http://www.math.umass.edu/~siman/9899.html">
-  98/99</a>,
-<A HREF="http://www.math.umass.edu/~siman/9798.html">
-  97/98</a>,
-and
-<A HREF="http://www.math.umass.edu/~siman/9697.html">
-  96/97</a>
-Five College Number Theory Seminars.
-  
-
-</P>
-
-
-
-
-
-
-
-
-<P>
-This page is maintained by
-    <a href="https://dmzb.github.io/">David Zureick-Brown</a>&nbsp; &nbsp;    
-</P>
-
-
-
-
-
-
-</BODY>
-</HTML>
-
-
-
-
-
-
-
+<div id="outline-container-orgca176e3" class="outline-2">
+<h2 id="orgca176e3">Past Seminar Pages</h2>
+<div class="outline-text-2" id="text-orgca176e3">
+<ul class="org-ul">
+<li><a href="https://people.math.umass.edu/~siman/seminar.html">2014/15–2022/23</a></li>
+<li><a href="http://www.math.umass.edu/~siman/1314.html">2013/14</a></li>
+<li><a href="http://www.math.umass.edu/~siman/1213.html">2012/13</a></li>
+<li><a href="http://www.math.umass.edu/~siman/1112.html">2011/12</a></li>
+<li><a href="http://www.math.umass.edu/~siman/1011.html">2010/11</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0910.html">2009/10</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0809.html">2008/09</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0708.html">2007/08</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0607.html">2006/07</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0506.html">2005/06</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0405.html">2004/05</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0304.html">2003/04</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0203.html">2002/03</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0102.html">2001/02</a></li>
+<li><a href="http://www.math.umass.edu/~siman/0001.html">2000/01</a></li>
+<li><a href="http://www.math.umass.edu/~siman/9900.html">1999/00</a></li>
+<li><a href="http://www.math.umass.edu/~siman/9899.html">1998/99</a></li>
+<li><a href="http://www.math.umass.edu/~siman/9798.html">1997/98</a></li>
+<li><a href="http://www.math.umass.edu/~siman/9697.html">1996/97</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Santiago Arango-Piñeros, David Zureick-Brown</p>
+<p class="date">Created: 2025-09-20 Sat 12:59</p>
+</div>
+</body>
+</html>
