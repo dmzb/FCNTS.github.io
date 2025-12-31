@@ -194,7 +194,8 @@ Abstract: I will discuss an elementary notion -- the rank of the multiplicative 
 
 
 * seminar info email for speakers
-It is! Talk is at 4pm, 50 minutes, and the room is set up for chalk (no sliding
+It is! Talk is at 4pm, 50 minutes + 10 minutes for questions, 
+and the room is set up for chalk (no sliding
 boards but a lot of board space) or slides.
 
 We usually go to lunch if you're around early enough, and dinner afterwards.
