@@ -23,7 +23,7 @@
 * Where and When
 - Unless noted otherwise, all talks begin at *4pm*.
 - Talks are held at *Amherst College*, in the *Seeley Mudd building*,
-  room *Seeley-Mudd 205*.
+  room *Seeley-Mudd 207*.
 
 * Driving Directions and Campus Map
 - [[https://www.amherst.edu/visiting/directions][Driving Directions to Amherst College]]
