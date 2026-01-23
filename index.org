@@ -1,10 +1,10 @@
 #+TITLE: Five College Number Theory Seminar
-#+SUBTITLE: Fall 2025
+#+SUBTITLE: Spring 2026
 #+AUTHOR: Santiago Arango-Piñeros, David Zureick-Brown
 #+OPTIONS: toc:nil num:nil
-# #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
 
 #+begin_export html
+<!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
 #+end_export
 
@@ -13,7 +13,7 @@
 <img src="ct-river.jpg" alt="Connecticut River Valley">
 #+end_export
 
-* Upcoming talks
+* Upcoming Talks
 
 #+begin_export html
 <div class="embeddable_schedule" shortname="FCNTS" daterange="future"></div>
@@ -76,7 +76,7 @@ near the Lederle Graduate Research Towers.
 - [[mailto:jbeineke@wne.edu][Jennifer Beineke]]
 - [[mailto:cshor@wne.edu][Caleb Shor]]
 
-* Previous talks
+* Previous Talks
 
 #+begin_export html
 <div class="embeddable_schedule" shortname="FCNTS" daterange="past"></div>
