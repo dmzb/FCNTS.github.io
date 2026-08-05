@@ -89,21 +89,20 @@ May 5 no seminars, honors thesis weeks
 Some of the later dates we might need to hold for honors thesis week.
 
 * invitation email
-https://zporat.github.io/
-zporat@wesleyan.edu
 
-https://sites.google.com/view/alicelinmath/about
-alicelin@math.harvard.edu
+"Achenjang, Niven" <achenjang@math.harvard.edu>
+https://people.math.harvard.edu/~achenjang/
 
 
 
-Invitation to speak at the Five Colleges Number Theory Seminar
 
-Hello Zach,
+Invitation to speak at the Pioneer Valley Number Theory Seminar
 
-I'm writing on behalf of the Pioneer Valley number theory group to invite you to speak at the Five Colleges Number Theory seminar.
+Hi Niven!
 
-This seminar, which includes Amherst College, Hampshire College, Mt Holyoke College, Smith College and UMass Amherst, meets Tuesdays at 4pm (usually at Amherst College). Talks are 50 minutes with 10 minutes for questions. The audience covers a mix of research areas within number theory and also includes UMass phd students.  
+I'm writing on behalf of the Pioneer Valley number theory group to invite you to speak at the Pioneer Valley Number Theory seminar.
+
+This seminar, which includes Amherst College, Mt Holyoke College, Smith College and UMass Amherst, meets Tuesdays at 4pm (usually at Amherst College). Talks are 50 minutes with 10 minutes for questions. The audience covers a mix of research areas within number theory and also includes UMass phd students.  
 
 Please let me know if you are interested and available!
 
@@ -117,8 +116,10 @@ The group usually meets for lunch and dinner the day of the seminar, if the spea
 
 Let me know if you can speak, in which case I'll send you more information. If none of these dates work, we can defer the invitation until the following semester.
 
+If you're willing, we'd be especially happy if you could give the first seminar talk on Sept. 8 (or barring that, one of the early talks). 
+
 Best wishes,
-Santiago
+DZB and Santi
 
 
 
@@ -128,7 +129,7 @@ Dear Kate,
 It was great meeting you at ICERM! 
 
 I'm writing on behalf of the Pioneer Valley number theory group to invite you
-to speak at the Five Colleges Number Theory seminar.
+to speak at the Pioneer Valley Number Theory seminar.
 
 This seminar, which includes Amherst College, Hampshire College, Mt Holyoke
 College, Smith College and UMass Amherst, meets Tuesdays at 4pm (usually at
@@ -163,8 +164,7 @@ Actually, I reread the email thread I sent you, and it says "Faculty seminar fun
 * reminder email
 
 
-Five Colleges Number Theory Seminar this Tuesday, September 15, by John Cullinan (4pm in Seeley Mudd 207)
-
+Pioneer Valley Number Theory Seminar this Tuesday, September 15, by John Cullinan (4pm in Seeley Mudd 207)
 
 https://faculty.bard.edu/cullinan/
 
@@ -234,7 +234,7 @@ We're looking forward to seeing you!
 
 * fc organizational email
 
-Five Colleges Number Theory Seminar organizational meeting this Tuesday,
+Pioneer Valley Number Theory Seminar organizational meeting this Tuesday,
 September 1 (4pm in SMudd 207).
 
 Hi everyone,
@@ -255,7 +255,7 @@ A few other things:
 
 (3) The current website for the seminar is here https://dmzb.github.io/FCNTS.github.io/, and you can import a calendar for the seminar here https://researchseminars.org/seminar/FCNTS
 
-
+(4) If there is anyone new to the area that I should add to the mailing list (or that I should remove), please let me know!
 
 
 ** omitted
