@@ -235,35 +235,27 @@ We're looking forward to seeing you!
 * fc organizational email
 
 Five Colleges Number Theory Seminar organizational meeting this Tuesday,
-September 2 (4pm in SMudd 207).
+September 1 (4pm in SMudd 207).
 
 Hi everyone,
 
-I'm writing to invite you to an organizational meeting this Tuesday (September
-2, 4pm in SMudd 207) for our seminar. (The room is not confirmed yet; if there
-is a change I will email everyone Tuesday morning.)
+I'm writing to invite you to an organizational meeting this Tuesday (September 2, 4pm in SMudd 207) for our seminar. (The room is not confirmed yet; if there is a change I will email everyone Tuesday morning.)
 
 
-If you can't make it, but there is someone you would like me to invite (or
-better, if you would like to volunteer to speak!) please let me know.
+If you can't make it, but there is someone you would like me to invite (or better, if you would like to volunteer to speak!) please let me know.
 
 
 A few other things:
 
-(1) I want to welcome Santiago Arango-Piñeros to the area! Santi is my former
-student, and is now a postdoc at UMASS. Welcome Santi!
+(0) If you can't make it to the meeting and have anyone you would like us to invite, please send me their names and webpage or contact info, and also a list of dates when you won't be around
 
-https://sarangop1728.github.io/
+(1) We have one speaker scheduled so far: Sept 9, John Cullian (Bard College)
 
-(2) We have one speaker scheduled so far: Sept 9, John Cullian (Bard College)
+(2) If I left anyone off of the organizer list (or if anyone receiving this email would prefer not to receive organizer emails), and if there is anyone new to the area to add to the main mailing list, please let me know!
 
-(3) I'm on sabbatical this year and will be in and out of town; Santi will be
-the main organizer, but I'll still be helping out (especially with
-reimbursements).
+(3) The current website for the seminar is here https://dmzb.github.io/FCNTS.github.io/, and you can import a calendar for the seminar here https://researchseminars.org/seminar/FCNTS
 
-(4) If I left anyone off of the organizer list (or if anyone receiving this
-email would prefer not to receive organizer emails), and if there is anyone new
-to the area to add to the main mailing list, please let me know!
+
 
 
 ** omitted
@@ -293,7 +285,6 @@ Farshid Hajir <hajir@umass.edu>,
 Santiago Arango-Piñeros <santiago.arango.pineros@gmail.com>,
 Jen Paulhus <jpaulhus@mtholyoke.edu>,
 Tori Day <tori.day@mtholyoke.edu>,
-Louis Gaudet <lgaudet@umass.edu>,
 David Cox <dacox@amherst.edu>,
 John Cullinan <cullinan@bard.edu>,
 Aditya Khurmi <akhurmi@umass.edu>,
