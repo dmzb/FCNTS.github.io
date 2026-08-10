@@ -1,5 +1,5 @@
-#+TITLE: Five College Number Theory Seminar
-#+SUBTITLE: Spring 2026
+#+TITLE: Pioneer Valley Number Theory Seminar
+#+SUBTITLE: Fall 2026
 #+AUTHOR: Santiago Arango-Piñeros, David Zureick-Brown
 #+OPTIONS: toc:nil num:nil
 
@@ -66,7 +66,6 @@ near the Lederle Graduate Research Towers.
 
 ** UMass Amherst
 - [[https://sarangop1728.github.io/][Santiago Arango-Piñeros]]
-- [[https://www.umass.edu/mathematics-statistics/about/directory/louis-gaudet][Louis Gaudet]]
 - [[http://www.math.umass.edu/~gunnells][Paul Gunnells]]
 - [[http://www.math.umass.edu/~hajir][Farshid Hajir]]
 - [[http://www.math.umass.edu/~weston/][Thomas Weston]]
