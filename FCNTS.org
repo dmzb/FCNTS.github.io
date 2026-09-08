@@ -16,8 +16,6 @@ S22 Niven Achenjang
 S29 Marius Leonhardt
 O06 Matt Broe 
 
-Zichao (Dean) lin (Tom student) try early
-
 Lori Watson (Harris)
 Has a postdoc Ariel Weiss 
 
@@ -355,7 +353,6 @@ Jen Paulhus <jpaulhus@mtholyoke.edu>,
 Tori Day <tori.day@mtholyoke.edu>,
 David Cox <dacox@amherst.edu>,
 John Cullinan <cullinan@bard.edu>,
-Aditya Khurmi <akhurmi@umass.edu>,
 Jeffrey Hatley <hatleyj@union.edu>,
 Margaret Robinson <robinson@mtholyoke.edu>,
 Tori Day <day22v@mtholyoke.edu>,
