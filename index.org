@@ -1,4 +1,4 @@
-#+TITLE: Pioneer Valley Number Theory Seminar
+#+TITLE: Five College Number Theory Seminar
 #+SUBTITLE: Fall 2026
 #+AUTHOR: Santiago Arango-Piñeros, David Zureick-Brown
 #+OPTIONS: toc:nil num:nil
